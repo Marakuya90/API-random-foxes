@@ -7,11 +7,13 @@ async function update(){
     let ext = result.image.slice(pos + 1);
     console.log(ext);
     if (ext == 'mp4') {
-        document.querySelector('video').style.display = 'block';
+        document.querySelector('video').style.display = 'initial';
+        document.querySelector('img').style.display = 'none';
         document.querySelector('video').src = result.image
 
     } else {
-        document.querySelector('img').style.display = 'block';
+        document.querySelector('img').style.display = 'initial';
+        document.querySelector('video').style.display = 'none';
         document.querySelector('img').src = result.image;
     }
 }
