@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+ div .foxes {
+    width: 40vw;
+    height: 40vh;
+    border-radius: 20px;
+    border: 1px solid #000000;
+}
+.foxes img, .foxes video{
+    width: 100%;
+    height: 100%;
+    object-fit:contain;
+    display: none;
+}
+ button {
+    border-radius: 50px;
+    background-color: rgb(187, 237, 237);
+    width: 100px;
+    height: 40px;
+    margin-top: 40px;
+    border:none;
+ }
+
+ button:active {
+    background-color:rgb(144, 182, 182)
+ }
