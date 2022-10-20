@@ -38,6 +38,9 @@ const app = Vue.createApp({
             this.url = result.image
             this.ext = result.image.slice(pos + 1)
         }
+    },
+    mounted: function(){
+        this.update();
     }
 })
 
