@@ -7,16 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Random Fox</title>
     <link rel="stylesheet" href="/css/style.css">
+    <script src="https://unpkg.com/vue@next" defer></script>
     <script src="/js/main.js" defer></script>
 </head>
 
 <body>
     <main>
         <div class="foxes">
-            <img src="" alt="foxes">
-            <video src="" autoplay></video>
+            <img :src="url" alt="foxes" v-if="ext != 'mp4'">
+            <video :src="url" autoplay v-if="ext == 'mp4'"></video>
         </div>
-        <button>Обновить</button>
+        <button @click="update">Обновить</button>
     </main>
 </body>
 

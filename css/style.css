@@ -22,7 +22,6 @@ main {
     width: 100%;
     height: 100%;
     object-fit:contain;
-    display: none;
 }
  button {
     border-radius: 50px;
